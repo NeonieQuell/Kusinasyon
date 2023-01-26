@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/screen_padding"
+        android:paddingEnd="@dimen/screen_padding">
+
+        <TextView
+            android:id="@+id/tv_description_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/screen_padding"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_bold"
+            android:maxLines="1"
+            android:text="Description"
+            android:textColor="@color/sonic_silver_900"
+            android:textSize="@dimen/typescale_title_medium" />
+
+        <TextView
+            android:id="@+id/tv_description_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_description_title"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_regular" />
+
+        <TextView
+            android:id="@+id/tv_author_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_description_content"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_bold"
+            android:maxLines="1"
+            android:text="Author: "
+            android:textColor="@color/sonic_silver_900" />
+
+        <TextView
+            android:id="@+id/tv_author_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_author_title"
+            android:layout_alignBottom="@id/tv_author_title"
+            android:layout_toEndOf="@id/tv_author_title"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_regular"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/tv_origin_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_author_title"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_bold"
+            android:maxLines="1"
+            android:text="Origin: "
+            android:textColor="@color/sonic_silver_900" />
+
+        <TextView
+            android:id="@+id/tv_origin_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_author_title"
+            android:layout_alignTop="@id/tv_origin_title"
+            android:layout_alignBottom="@id/tv_origin_title"
+            android:layout_toEndOf="@id/tv_origin_title"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_regular"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/tv_visibility_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_origin_title"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_bold"
+            android:maxLines="1"
+            android:text="Visibility: "
+            android:textColor="@color/sonic_silver_900" />
+
+        <TextView
+            android:id="@+id/tv_visibility_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_origin_title"
+            android:layout_alignTop="@id/tv_visibility_title"
+            android:layout_alignBottom="@id/tv_visibility_title"
+            android:layout_toEndOf="@id/tv_visibility_title"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_regular"
+            android:maxLines="1" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_act_main_btm_nav_view_home"
+        android:icon="@drawable/selector_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/menu_act_main_btm_nav_view_public_recipes"
+        android:icon="@drawable/selector_public_recipes"
+        android:title="Public Recipes" />
+
+    <item
+        android:id="@+id/menu_act_main_btm_nav_view_private_recipes"
+        android:icon="@drawable/selector_private_recipes"
+        android:title="Private Recipes" />
+
+    <item
+        android:id="@+id/menu_act_main_btm_nav_view_account"
+        android:icon="@drawable/selector_account"
+        android:title="Account" />
+
+</menu>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kusinasyon</string>
+    <string name="valid_inputs_1">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789., \n</string>
+    <string name="valid_inputs_2">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,# \n</string>
+
+    <!--  Activity Ingredients Bag.  -->
+    <string name="assumed_ingredient">The only ingredient we assume you have is:\n1. Water</string>
+
+    <string name="name_cannot_be_empty">Name cannot be empty</string>
+    <string name="description_cannot_be_empty">Description cannot be empty</string>
+    <string name="ingredients_cannot_be_empty">Ingredients cannot be empty</string>
+    <string name="assumed_key_ingredient">The only key ingredient we assume you have is:\n1. Water</string>
+    <string name="key_ingredients_cannot_be_empty">Key ingredients cannot be empty</string>
+    <string name="instructions_cannot_be_empty">Instructions cannot be empty</string>
+    <string name="image_cannot_be_empty">Image cannot be empty</string>
+    <string name="failed_to_share_recipe">Failed to share recipe</string>
+
+    <!--  Recipe Origin  -->
+    <string-array name="origins">
+        <item>luzon</item>
+        <item>visayas</item>
+        <item>mindanao</item>
+        <item>more</item>
+    </string-array>
+
+    <!--  Toast Generic Message.  -->
+    <string name="press_back_twice">Press back again to exit</string>
+
+    <!--  String splitter.  -->
+    <string name="splitter_sign">#</string>
+</resources>

@@ -1,0 +1,10 @@
+Icons are from Google Fonts Official Website
+https://fonts.google.com/about
+
+Google Font Icon Configuration:
+        Type:       MATERIAL SYMBOL
+       Shape:       ROUNDED
+        Fill:       0/1
+      Weight:       200
+       Grade:       0/200
+        Size:       24px

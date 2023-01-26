@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    android:padding="@dimen/dialog_padding">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/CustomTvHeadLineSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dialog_padding_title_and_body"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="What are key ingredients?" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Key ingredients are recipe ingredients\nthat doesn't have its measurements.\n\nExample:\nIngredient: 1 teaspoon sugar\nKey Ingredient: Sugar" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_ok"
+        style="@style/CustomBtnTextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_message"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dialog_padding_message_and_button"
+        android:minWidth="0dp"
+        android:text="OK"
+        android:textColor="?attr/colorPrimary"
+        app:rippleColor="@android:color/transparent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</RelativeLayout>

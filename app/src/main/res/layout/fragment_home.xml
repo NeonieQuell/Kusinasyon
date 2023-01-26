@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nested_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/screen_padding"
+        android:paddingEnd="@dimen/screen_padding">
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="104dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_black"
+            android:lineHeight="40dp"
+            android:maxLines="2"
+            android:text="Let's select\nyour ingredients!"
+            android:textColor="@color/sonic_silver_900"
+            android:textSize="@dimen/typescale_display_small" />
+
+        <TextView
+            android:id="@+id/tv_pick_by_categ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_header"
+            android:layout_marginTop="32dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_bold"
+            android:maxLines="1"
+            android:text="Pick by Categories"
+            android:textColor="@color/sonic_silver_900"
+            android:textSize="@dimen/typescale_title_large" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pick_by_categ"
+            android:layout_marginTop="12dp"
+            android:overScrollMode="never"
+            android:paddingBottom="78dp"
+            android:scrollbars="none" />
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dialog"
+    android:paddingTop="@dimen/dialog_padding"
+    android:paddingBottom="@dimen/dialog_padding">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dialog_padding"
+        android:layout_marginEnd="@dimen/dialog_padding"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="Ingredient Group"
+        android:textColor="@color/sonic_silver_900"
+        android:textSize="@dimen/typescale_title_large" />
+
+    <include
+        android:id="@+id/et_search"
+        layout="@layout/layout_edit_text_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginStart="@dimen/dialog_padding"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/dialog_padding" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/top_div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_search"
+        android:layout_marginTop="20dp"
+        app:dividerColor="@color/sonic_silver_200" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btm_div"
+        android:layout_below="@id/top_div"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/btm_div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_close"
+        android:layout_marginBottom="@dimen/dialog_padding_message_and_button"
+        app:dividerColor="@color/sonic_silver_200" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_close"
+        style="@style/CustomBtnTextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:paddingStart="0dp"
+        android:paddingEnd="@dimen/dialog_padding"
+        android:text="Close"
+        android:textAllCaps="false"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</RelativeLayout>

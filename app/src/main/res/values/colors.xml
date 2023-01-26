@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="magic_potion_50">#FFFFE6EC</color>
+    <color name="magic_potion_100">#FFFFC0CF</color>
+    <color name="magic_potion_200">#FFFF97B0</color>
+    <color name="magic_potion_300">#FFFE6E91</color>
+    <color name="magic_potion_400">#FFFB5178</color>
+    <color name="magic_potion_500">#FFF93C62</color>
+    <color name="magic_potion_600">#FFE8375F</color>
+    <color name="magic_potion_700">#FFD2315B</color>
+    <color name="magic_potion_800">#FFBD2B58</color>
+    <color name="magic_potion_900">#FF982252</color>
+
+    <color name="sonic_silver_50">#FFFAFAFA</color>
+    <color name="sonic_silver_100">#FFF5F5F5</color>
+    <color name="sonic_silver_200">#FFEEEEEE</color>
+    <color name="sonic_silver_300">#FFE0E0E0</color>
+    <color name="sonic_silver_400">#FFBDBDBD</color>
+    <color name="sonic_silver_500">#FF9E9E9E</color>
+    <color name="sonic_silver_600">#FF757575</color>
+    <color name="sonic_silver_700">#FF616161</color>
+    <color name="sonic_silver_800">#FF424242</color>
+    <color name="sonic_silver_900">#FF212121</color>
+</resources>

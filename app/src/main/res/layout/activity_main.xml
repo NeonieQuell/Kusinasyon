@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ActivityMain">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btm_nav_view" />
+
+    <!--  Custom FAB (Ingredients Bag).  -->
+    <LinearLayout
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btm_nav_view"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/screen_padding"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/bg_fab"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:gravity="center_vertical"
+        android:minWidth="48dp"
+        android:minHeight="56dp"
+        android:orientation="horizontal"
+        android:outlineAmbientShadowColor="?attr/colorPrimaryVariant"
+        android:outlineSpotShadowColor="?attr/colorPrimaryVariant"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:id="@+id/fab_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:src="@drawable/ic_bag"
+            app:tint="@android:color/white" />
+
+        <TextView
+            android:id="@+id/fab_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_medium"
+            android:maxHeight="24dp"
+            android:maxLines="1"
+            android:paddingStart="@dimen/padding_component_and_text"
+            android:paddingEnd="0dp"
+            android:text="Ingredients Bag"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/typescale_body_medium" />
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/btm_nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemRippleColor="@color/magic_potion_100"
+        app:itemTextAppearanceActive="@style/CustomBtmNavViewTextStyle"
+        app:labelVisibilityMode="selected"
+        app:menu="@menu/menu_btm_nav_view" />
+
+</RelativeLayout>

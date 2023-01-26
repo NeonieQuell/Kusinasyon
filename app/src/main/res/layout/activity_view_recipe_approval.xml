@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/act_view_recipe_layout_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sonic_silver_100"
+    android:keepScreenOn="true"
+    tools:context=".activity.ActivityViewRecipeApproval">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back_ios_new"
+        android:theme="@style/Theme.Material3.Light.NoActionBar"
+        app:backgroundTint="@android:color/white"
+        app:fabCustomSize="@dimen/m3_fab_size_mini"
+        app:rippleColor="@android:color/transparent"
+        app:tint="@color/sonic_silver_600"
+        app:useCompatPadding="true"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/recipe_img"
+        android:layout_width="match_parent"
+        android:layout_height="336dp"
+        android:scaleType="centerCrop" />
+
+    <include
+        android:id="@+id/btm_sheet"
+        layout="@layout/layout_bottom_sheet_recipe_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fab_back" />
+
+</RelativeLayout>

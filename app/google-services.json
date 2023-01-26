@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "556809736375",
+    "project_id": "kusinasyon-8f94b",
+    "storage_bucket": "kusinasyon-8f94b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556809736375:android:43a3aafa4d4090211d3d32",
+        "android_client_info": {
+          "package_name": "com.neoniequellponce.kusinasyon_capstone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "556809736375-t9fqstggl0d4lblk7n7puht022689hgo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.neoniequellponce.kusinasyon_capstone",
+            "certificate_hash": "a5aa602a746f8c1fc09a526f031372a092141e36"
+          }
+        },
+        {
+          "client_id": "556809736375-kpmr1s85rbesq8djs4vhtovqma5rttiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmpVyf-qRMyqhr89yIPzB4Cna993bhX68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "556809736375-kpmr1s85rbesq8djs4vhtovqma5rttiu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

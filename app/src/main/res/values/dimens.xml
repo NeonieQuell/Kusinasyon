@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Typescale tokens. 
+     https://github.com/material-components/material-components-android/blob/master/docs/theming/Typography.md  -->
+    <dimen name="typescale_body_small">12sp</dimen>
+    <dimen name="typescale_body_medium">14sp</dimen>
+    <dimen name="typescale_body_large">16sp</dimen>
+    <dimen name="typescale_title_medium">18sp</dimen>
+    <dimen name="typescale_title_large">20sp</dimen>
+    <dimen name="typescale_headline_small">24sp</dimen>
+    <dimen name="typescale_headline_medium">28sp</dimen>
+    <dimen name="typescale_display_small">36sp</dimen>
+
+    <!--  Shape scale tokens.
+    https://m3.material.io/styles/shape/shape-scale-tokens  -->
+    <dimen name="shape_extra_small">4dp</dimen>
+    <dimen name="shape_small">8dp</dimen>
+    <dimen name="shape_medium">12dp</dimen>
+    <dimen name="shape_large">16dp</dimen>
+    <dimen name="shape_extra_large">28dp</dimen>
+    <dimen name="shape_full">999dp</dimen>
+
+    <!--  Dialog tokens.  -->
+    <dimen name="dialog_padding">24dp</dimen>
+    <dimen name="dialog_padding_title_and_body">16dp</dimen>
+    <dimen name="dialog_padding_message_and_button">24dp</dimen>
+
+    <dimen name="screen_padding">16dp</dimen>
+
+    <dimen name="padding_component_and_text">8dp</dimen>
+    <dimen name="padding_image_and_text">16dp</dimen>
+
+    <dimen name="recycler_view_item">56dp</dimen>
+    <dimen name="m3_fab_size_mini">48dp</dimen>
+</resources>

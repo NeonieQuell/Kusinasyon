@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activity.ActivityInviteUser">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/layout_app_bar" />
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_padding"
+        android:layout_marginTop="@dimen/screen_padding"
+        android:layout_marginEnd="@dimen/screen_padding"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto_black"
+        android:text="Header"
+        android:textColor="@color/sonic_silver_900"
+        android:textSize="@dimen/typescale_headline_medium" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_padding"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/screen_padding"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Share your code out loud or send it via message"
+        android:textColor="@color/magic_potion_300"
+        android:textSize="@dimen/typescale_title_large" />
+
+    <TextView
+        android:id="@+id/tv_invite_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_padding"
+        android:layout_marginTop="@dimen/screen_padding"
+        android:layout_marginEnd="@dimen/screen_padding"
+        android:background="@drawable/bg_tv_invite_code"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingStart="8dp"
+        android:paddingTop="56dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="56dp"
+        android:text="Invite code"
+        android:textAlignment="center"
+        android:textColor="@color/magic_potion_400"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/typescale_headline_medium" />
+
+</LinearLayout>
